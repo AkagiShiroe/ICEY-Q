@@ -16,11 +16,11 @@ script:
   - wget https://github.com/probonopd/uploadtool/raw/master/upload.sh
   - chmod +x ./gcc-fix.sh
 #  - sudo ln -s ./include/dt-bindings dt-bindings
-  - chmod +x ./Z00T.sh
-  - chmod +x ./Z00L.sh
+  - chmod +x ./build_Z00T.sh
+  - chmod +x ./build_Z00L.sh
   - sudo bash ./gcc-fix.sh
-  - sudo bash ./Z00T.sh
-#  - sudo bash ./Z00L.sh
+  - sudo bash ./build_Z00T.sh
+#  - sudo bash ./build_Z00L.sh
 
 after_success:
   - export UPLOADTOOL_SUFFIX=Tsurara
