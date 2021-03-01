@@ -22,10 +22,10 @@ script:
   - sudo bash ./build_Z00T.sh
   - sudo bash ./build_Z00L.sh
 
-#after_success:
-#  - export UPLOADTOOL_SUFFIX=Tsurara
-#  - export UPLOADTOOL_BODY="Custom Q Kernel for Z00L/Z00T Devices Without CC Stack Protector"
-#  - sudo bash upload.sh $TRAVIS_BUILD_DIR/msm8916/*.zip
+after_success:
+  - export UPLOADTOOL_SUFFIX=Tsurara
+  - export UPLOADTOOL_BODY="Custom Q Kernel for Z00L/Z00T Devices Without CC Stack Protector"
+  - sudo bash upload.sh $TRAVIS_BUILD_DIR/msm8916/*.zip
 
 branches:
   except:
