@@ -4,13 +4,13 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=FireKernel by theimpulson @ xda-developers
+kernel.string=TSURARA KERNEL
 do.devicecheck=0
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=Z00L
-device.name2=Z00T
+device.name1=Z00T
+device.name2=Z00L
 device.name3=
 device.name4=
 device.name5=
